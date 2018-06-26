@@ -1,0 +1,96 @@
+.navbar navbar-expand-lg navbar-light {
+    float: right;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-caption {
+    color: rgb(182, 140, 232);
+    font-family: "Pacifico", cursive;
+}
+
+footer {
+    background-color: rgb(167, 180, 255);
+    height: 176px;
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel-inner {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.items {
+    color: rgb(140, 209, 232);
+    text-align: center;
+}
+
+.navbar-brand {
+    background-color: #9affdf;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px;
+  }
+
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 4px;
+  }
+
+  .column img {
+    margin: 8px;
+    vertical-align: middle;
+  }
+
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.show {display:block;}
