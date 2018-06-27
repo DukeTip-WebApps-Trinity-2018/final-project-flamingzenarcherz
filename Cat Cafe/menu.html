@@ -9,6 +9,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="catCafe.html">
             <img src="img/Logos/cafe_coffee.png">
@@ -19,16 +20,18 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="catCafe.html">Home
-                        <span class="sr-only">(current)</span>
+
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="info.html">Info</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="menu.html">Menu</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="menu.html">Menu
+                        <span class="sr-only">(current)</span>
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="cat.html">Cats</a>
@@ -41,63 +44,236 @@
 
 
 <body>
-    <div id="carousel" class="carousel slide" data-ride="carousel">
+    <div class="wrapper">
+        <div id="carousel" class="carousel slide" data-ride="carousel">
 
-        <!-- Indicators -->
-        <ul class="carousel-indicators">
-            <li data-target="#carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel" data-slide-to="1"></li>
-            <li data-target="#dcarousel" data-slide-to="2"></li>
-        </ul>
-
-        <!-- The slideshow -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/04-as-coffee_shop_872-ab_1.jpg" alt="Los Angeles" width="2200px" height="975px">
-                <div class="carousel-caption">
-                    <h3>Coffee and pastries</h3>
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/04-as-coffee_shop_872-ab_1.jpg" alt="Los Angeles" width="2200px" height="975px">
+                    <div class="carousel-caption">
+                        <h3>Coffee and pastries</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/sailor-moon-cafe-featured-09082017.jpg" alt="Chicago" width="2200px" height="975px">
+                    <div class="carousel-caption">
+                        <h3>Delectable treats</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/cafe-saludable-menos-un-tipo-persona-810x540.jpg" alt="New York" width="2200px" height="975px">
+                    <div class="carousel-caption">
+                        <h3>An assortment of drinks</h3>
+                    </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="img/sailor-moon-cafe-featured-09082017.jpg" alt="Chicago" width="2200px" height="975px">
-                <div class="carousel-caption">
-                    <h3>Delectable treats</h3>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#carousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Entrees
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>Classic Turkey Sandwich</p>
+                            <p>Classic Ham & Cheese Sandwich</p>
+                            <p>Classic Garden Salad</p>
+                            <p>Classic Caesar Salad</p>
+                            <p>BLT</p>
+                            <p>Brazilian Bauru</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                Beverages
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                            non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                            moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+                            et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                            Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
+                            synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                Pastries
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <h1>Croissants</h1>
+                            <p>Classic</p>
+                            <p>Chocolate</p>
+                            <p>Almond</p>
+                            <p>Fruit</p>
+                            <p>Custard</p>
+                            <p>Cream Cheese and Lox w/ Purple Onions, Lemon Juice, and Capers</p>
+                            <p>Lemon</p>
+
+                            <h1>Macarons</h1>
+
+
+
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+
+                            <h1>Profiteroles</h1>
+
+                            <p>Single: 3 to an Order</p>
+                            <p>To Share: 6 to an Order</p>
+                            <p>Family Style: 10 to an Order</p>
+                            <p>Appetitely Expanded: 15 to an Order</p>
+                            <p>Stomack Destroyer: 25 to an Order</p>
+                            <p>(Served w/ Any Combo of Chocolate Sauce, Strawberry Sauce, and Honey)</p>
+
+                            <h1>Muffins</h1>
+
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            
+                            <h1>Crêpes</h1>
+
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+
+                            <h1>Scones</h1>
+
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+
+                            <h1>Beignets</h1>
+
+                            <p>Single: 3 to an Order ($3)</p>
+                            <p>To Share: 6 to an Order ($5)</p>
+                            <p>Family Style: 10 to an Order ($8)</p>
+                            <p>Appetitely Expanded: 15 to an Order ($11)</p>
+                            <p>Stomack Destroyer: 25 to an Order ($18)</p>
+                            <p>(Served w/ Any Combo of Cinnamon, Powdered Sugar, Brown Sugar, and Honey)</p>
+
+                            <h1>Palmiers</h1>
+
+                            <p>Single: 3 to an Order ($1)</p>
+                            <p>To Share: 6 to an Order ($2)</p>
+                            <p>Family Style: 10 to an Order ($3)</p>
+                            <p>Appetitely Expanded: 15 to an Order ($4)</p>
+                            <p>Stomack Destroyer: 25 to an Order ($6)</p>
+                            <p>(Served w/ Honey)</p>
+
+                            <h1>Churros</h1>
+
+                            <p>Single: 3 to an Order ($5)</p>
+                            <p>To Share: 6 to an Order ($8)</p>
+                            <p>Family Style: 10 to an Order ($12)</p>
+                            <p>Appetitely Expanded: 15 to an Order ($17)</p>
+                            <p>Stomack Destroyer: 25 to an Order ($28)</p>
+                            <p>(Served w/ Cinnamon Sugar and/or Honey)</p>
+
+                            <h1>Baklava ($2 per order)</h1>
+
+                            <p>Cevizli</p>
+                            <p>Fistikli</p>
+                            <p>Bukaj</p>
+                            <p>Borma</p>
+                            <p>Balourieh</p>
+                            <p>Nasma</p>
+                            <p>Asabi</p>
+                            <p>Bird's Nest</p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                aria-controls="collapseFour">
+                                Specials
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                            non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                            moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+                            et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                            Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
+                            synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="img/cafe-saludable-menos-un-tipo-persona-810x540.jpg" alt="New York" width="2200px" height="975px">
-                <div class="carousel-caption">
-                    <h3>An assortment of drinks</h3>
-                </div>
+
+        </div>
+        <div class="zip">
+            <h1 id="zipHeaderStyle">Put Zip here</h1>
+            <input class="city" type="text"></input>
+            <button class="submit">Submit</button>
+            <div class="outputStyle">
+                <div class="country"></div>
+                <div class="temp"></div>
+                <div class="city-name"></div>
+                <div class="weather"></div>
             </div>
         </div>
-
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#carousel" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#carousel" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
-
-        <div class="items">
-            <h1>Entrees</h1>
-            <h1>Beverages</h1>
-            <h1>Pastries</h1>
-            <h1>Specials</h1>
-
-        </div>
-
     </div>
-    <h1>Put Zip here</h1>
-    <input class="city" type="text"></input>
-    <button class="submit">submit</button>
-    <div class="country"></div>
-    <div class="temp"></div>
-    <div class="city-name"></div>
-    <div class="weather"></div>
     <footer>
-        <h1>Social Media</h1>
+        <h1>Contact Us</h1>
+        <p>777-777-7777</p>
+        <h1>Restaurant</h1>
+        <p>777 Sunny Avenue</p>
     </footer>
 
 

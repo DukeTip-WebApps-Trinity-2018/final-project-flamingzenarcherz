@@ -12,9 +12,33 @@
     font-family: "Pacifico", cursive;
 }
 
+.wrapper {
+    margin-bottom: -210px;
+    border: 0px solid black;
+}
+
+.catCafeMargin {
+    border: 0px solid black;
+    margin: 360px;
+}
+
 footer {
-    background-color: rgb(167, 180, 255);
-    height: 176px;
+    background-color: #9affda;
+    color: rgb(182, 140, 232);
+    height: 210px;
+    font-family: 'Indie Flower', cursive;   
+    text-align: center;  
+    border: 0px solid black;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+footer h1 {
+    font-size: 35px;
+}
+
+footer p {
+    font-size: 30px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -27,6 +51,7 @@ footer {
 .items {
     color: rgb(140, 209, 232);
     text-align: center;
+    font-family: "Pacifico", cursive;
 }
 
 .navbar-brand {
@@ -59,11 +84,14 @@ footer {
 
 .dropbtn {
     background-color: #3498DB;
-    color: white;
+    color: rgb(167, 180, 255);
     padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    width: 100%;
+    font-size: 40px;
+    font-family: "Indie Flower", cursive;    
 }
 
 .dropbtn:hover, .dropbtn:focus {
@@ -73,6 +101,7 @@ footer {
 .dropdown {
     position: relative;
     display: inline-block;
+    width: 100%;
 }
 
 .dropdown-content {
@@ -82,15 +111,86 @@ footer {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
 }
 
 .dropdown-content a {
-    color: black;
+    color: rgb(167, 180, 255);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-family: "Indie Flower", cursive;
 }
 
 .dropdown-content a:hover {background-color: #ddd}
 
 .show {display:block;}
+
+.zip {
+    color: #b68ce8;
+    font-family: "Pacifico", cursive;
+    font-size: 20px;    
+    text-align: center;
+    border: 0px solid rgb(167, 180, 255);
+    margin: 40px 0px 300px 0px;
+}
+
+.card-header {
+    color: rgb(140, 209, 232);
+    text-align: center;
+    font-family: "Pacifico", cursive;
+}
+
+.card-body {
+    color: rgb(140, 209, 232);
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    font-size: 20px;
+}
+
+.card-header {
+    font-size: 30px;
+    color: rgb(140, 209, 232);
+    text-align: center;
+    font-family: "Pacifico", cursive;
+}
+
+.city {
+    color: #b68ce8;
+    font-family: "Pacifico", cursive;
+    font-size: 25px;    
+    text-align: center;
+}
+
+.submit {
+    color: #b68ce8;
+    font-family: "Pacifico", cursive;
+    font-size: 25px;    
+    text-align: center;
+}
+
+.outputStyle {
+    color: #b68ce8;
+    font-family: "Pacifico", cursive;
+    font-size: 30px;    
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.card-header h2 button{
+    font-size: 40px;
+    color: #b68ce8;
+    font-family: "Pacifico", cursive;
+}
+
+body {
+    background-color: #F7F7F7;
+}
+
+.cats {
+    width: 100%;
+    height: auto;
+}
+
