@@ -38,7 +38,7 @@ function recomendations(response) {
   if (response.main.temp <= 5) {
     $(".recommend").html("Do you really want to go outside?");
   }
-  if (response.weather.main == "Scattered Clouds") {
+  if (response.weather[0].description == "Scattered Clouds") {
     $(".recommend").html("It's raining");
   }
 }

@@ -46,8 +46,8 @@ footer p {
 
 @media only screen and (max-width: 600px) {
     .carousel-inner {
-        width: 100%;
-        height: auto;
+        width: 500px;
+        height: 1000px;
     }
 }
 
