@@ -25,12 +25,14 @@
 footer {
     background-color: #9affda;
     color: rgb(182, 140, 232);
-    height: 210px;
+    height: 227px;
     font-family: 'Indie Flower', cursive;   
     text-align: center;  
     border: 0px solid black;
     padding: 0px;
     margin-bottom: 0px;
+    position: absolute;
+    width:100%;
 }
 
 footer h1 {
@@ -40,6 +42,7 @@ footer h1 {
 footer p {
     font-size: 30px;
 }
+
 
 @media only screen and (max-width: 600px) {
     .carousel-inner {
@@ -68,17 +71,22 @@ footer p {
     flex: 25%;
     max-width: 25%;
     padding: 4px;
+    max-height: 25%;
   }
 
   .column img {
-    margin: 8px;
-    vertical-align: middle;
+    max-width: 75%;
+    max-height: 75%;
+    margin: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media screen and (max-width: 800px) {
     .column {
       flex: 50%;
-      max-width: 50%;
+      max-width: 25%;
     }
   }
 
@@ -147,7 +155,12 @@ footer p {
     color: rgb(140, 209, 232);
     text-align: center;
     font-family: "Pacifico", cursive;
-    font-size: 20px;
+    font-size: 25px;
+}
+
+.card-body h1 {
+    color: #b68ce8;
+    font-size: 45px;
 }
 
 .card-header {
@@ -191,6 +204,23 @@ body {
 
 .cats {
     width: 100%;
+    height: auto;
+}
+
+.pastries {
+    width: 15%;
+    height: auto;
+}
+
+.entrees {
+    width: 25%;
+    height: auto;
+    border: 0px solid black;
+    margin-bottom: 70px;
+}
+
+.beverages {
+    width: 25%;
     height: auto;
 }
 
