@@ -1,5 +1,6 @@
 .navbar navbar-expand-lg navbar-light {
     float: right;
+    background-color: #a7b4ff;
 }
 
 .carousel-inner {
@@ -10,6 +11,12 @@
 .carousel-caption {
     color: rgb(182, 140, 232);
     font-family: "Pacifico", cursive;
+}
+
+.collapse {
+    font-size: 30px;
+    float: right;
+    background-color: #a7b4ff;
 }
 
 .wrapper {
@@ -23,15 +30,15 @@
 }
 
 footer {
-    background-color: #9affda;
-    color: rgb(182, 140, 232);
+    background-color: rgb(140, 209, 232);
+    color: blue;
     height: 227px;
     font-family: 'Indie Flower', cursive;   
     text-align: center;  
     border: 0px solid black;
     padding: 0px;
     margin-bottom: 0px;
-    position: absolute;
+    position: sticky;
     width:100%;
 }
 
@@ -44,12 +51,7 @@ footer p {
 }
 
 
-@media only screen and (max-width: 600px) {
-    .carousel-inner {
-        width: 500px;
-        height: 1000px;
-    }
-}
+
 
 .items {
     color: rgb(140, 209, 232);
@@ -58,7 +60,7 @@ footer p {
 }
 
 .navbar-brand {
-    background-color: #9affdf;
+    background-color: #a7b4ff;
 }
 
 .row {
@@ -72,6 +74,9 @@ footer p {
     max-width: 25%;
     padding: 4px;
     max-height: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .column img {
@@ -83,12 +88,6 @@ footer p {
     margin-right: auto;
   }
 
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 25%;
-    }
-  }
 
 .dropbtn {
     background-color: #3498DB;
@@ -106,33 +105,26 @@ footer p {
     background-color: #2980B9;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
+.dropdown show {
     width: 100%;
+    height: auto;
+    background-color: #2980B9
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+#dropdownMenuLink {
     width: 100%;
+    height: auto;
+    background-color: #2980B9
+}
+
+.dropdown-menu {
+    width: 100%;
+    height: auto;
     text-align: center;
-    font-size: 40px;
-}
-
-.dropdown-content a {
-    color: rgb(167, 180, 255);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
     font-family: "Indie Flower", cursive;
+    font-size: 30px;    
+    color: #b68ce8;                    
 }
-
-.dropdown-content a:hover {background-color: #ddd}
 
 .show {display:block;}
 
@@ -146,26 +138,29 @@ footer p {
 }
 
 .card-header {
-    color: rgb(140, 209, 232);
+    color: gray;
     text-align: center;
     font-family: "Pacifico", cursive;
+    background-color: #a7b4ff;
 }
 
 .card-body {
-    color: rgb(140, 209, 232);
+    color: gray;
+    background-color: #a7b4ff;
     text-align: center;
     font-family: "Pacifico", cursive;
     font-size: 25px;
+
 }
 
 .card-body h1 {
-    color: #b68ce8;
+    color: gray;
     font-size: 45px;
 }
 
 .card-header {
     font-size: 30px;
-    color: rgb(140, 209, 232);
+    color: gray;
     text-align: center;
     font-family: "Pacifico", cursive;
 }
@@ -175,6 +170,8 @@ footer p {
     font-family: "Pacifico", cursive;
     font-size: 25px;    
     text-align: center;
+    background-color: #a7b4ff;
+    border: 5px ridge gray;
 }
 
 .submit {
@@ -182,6 +179,8 @@ footer p {
     font-family: "Pacifico", cursive;
     font-size: 25px;    
     text-align: center;
+    background-color: #a7b4ff;
+    border: 5px ridge gray;
 }
 
 .outputStyle {
@@ -199,7 +198,7 @@ footer p {
 }
 
 body {
-    background-color: #F7F7F7;
+    background-color: #a7b4ff;
 }
 
 .cats {
@@ -223,4 +222,43 @@ body {
     width: 25%;
     height: auto;
 }
+.carouselimageshome{
+    height: 1000px;
+    width: 1348px;
+}
 
+
+@media only screen and (max-width: 600px) {
+    .carousel-inner {
+        width: 500px;
+        height: 1000px;
+    }
+
+    .card-body {
+        font-size: 10px;
+    }
+
+    .card-body h1 {
+        font-size: 25px;
+    }
+
+    .navbar-brand {
+        max-width: 10%;
+        max-height: 30%;
+    }
+
+    .d-block w-100 .carouselimageshome {
+        width: 100%;
+        height: 100%;
+    }
+
+    .carousel-item {
+        width: 100%;
+        height: 100%;
+    }
+
+    .carousel-item active {
+        width: 100%;
+        height: 100%;
+    }
+}

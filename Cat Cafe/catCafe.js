@@ -27,16 +27,19 @@ function recomendations(response) {
   }
   if (response.main.temp > 60 && response.main.temp <= 85) {
     $(".recommend").html("It's a nice temperature; We recommend a Sprite and a muffin.");
-      $('#recommendImage').prepend('<img id="image" src="https://weather.sumofus.org/static/weather-images/carousel/sun.png" />')
+    $('#recommendImage').prepend('<img id="image" src="https://weather.sumofus.org/static/weather-images/carousel/sun.png" />')
   }
   if (response.main.temp > 30 && response.main.temp <= 60) {
     $(".recommend").html("It's pretty chilly; We recommend a hot latte and a caesar salad.");
+    $('#recommendImage').prepend('<img id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Cartoon_cloud.svg/1280px-Cartoon_cloud.svg.png" />')
   }
   if (response.main.temp <= 30 && response.main.temp > 55) {
     $(".recommend").html("It's cold out; We recommend a steaming espresso and a hot churro.");
+    $('#recommendImage').prepend('<img id="image" src="https://www.publicdomainpictures.net/pictures/130000/velka/grey-snowflake-2.jpg" />') 
   }
   if (response.main.temp <= 5) {
     $(".recommend").html("Do you really want to go outside?");
+     $('#recommendImage').prepend('<img id="image" src="https://www.publicdomainpictures.net/pictures/130000/velka/grey-snowflake-2.jpg" />')
   }
   if (response.weather[0].description == "Scattered Clouds") {
     $(".recommend").html("It's raining");
