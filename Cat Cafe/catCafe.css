@@ -32,14 +32,13 @@
 footer {
     background-color: rgb(140, 209, 232);
     color: blue;
-    height: 227px;
     font-family: 'Indie Flower', cursive;   
     text-align: center;  
     border: 0px solid black;
     padding: 0px;
     margin-bottom: 0px;
-    position: sticky;
-    width:100%;
+    width: 100%;
+    bottom: 0;
 }
 
 footer h1 {
@@ -50,8 +49,9 @@ footer p {
     font-size: 30px;
 }
 
-
-
+#logoStyle {
+    background-color: #a7b4ff;
+}
 
 .items {
     color: rgb(140, 209, 232);
@@ -230,16 +230,16 @@ body {
 
 @media only screen and (max-width: 600px) {
     .carousel-inner {
-        width: 500px;
+        width: 600px;
         height: 1000px;
     }
 
     .card-body {
-        font-size: 10px;
+        font-size: 20px;
     }
 
     .card-body h1 {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .navbar-brand {
@@ -260,5 +260,10 @@ body {
     .carousel-item active {
         width: 100%;
         height: 100%;
+    }
+
+    #logoStyle {
+        max-width: 25%;
+        max-height: 25%;
     }
 }
